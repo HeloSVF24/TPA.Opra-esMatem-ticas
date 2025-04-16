@@ -1,0 +1,33 @@
+/*Desenvolvimeto de operações matemáticas
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package operações.matemáticas;
+
+/** Eu Heloisa do curso DS/AMS desenvolvi uma calculadora
+ *
+ * @author Heloisa 1DS/AMS
+ */
+public class OperaçõesMatemáticas {
+    public static void main(String[] args) {
+        // Definição de dois números
+        double número1 = 20.9;
+        double número2 = 15.6;
+        
+        // Realizando operações matemáticas
+        double adicao = número1 + número2;
+        double subtracao = número1 - número2;
+        double multiplicacao = número1 * número2;
+        double divisao = número2 != 0 ? número1 / número2 : Double.NaN; //Evita divisão de número zero
+        double resto = número1 % número2;
+        // Exibindo os resultados
+        System.out.println("Resultado das oprações:");
+        System.out.println("Adicao: " + adicao);
+        System.out.println("Subtracao: " + subtracao);
+        System.out.println("Multiplicao: " + multiplicacao);
+        System.out.println("Divisao: " + (número2 != 0 ? divisao: "Indefida (divisao por zero)"));
+        System.out.println("Resto por divisao: " + resto);
+           
+    }
+    
+}
