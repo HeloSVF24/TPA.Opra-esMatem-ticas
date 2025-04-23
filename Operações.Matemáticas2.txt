@@ -1,0 +1,95 @@
+/*desenvolver 10 operações matemáticas
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.opracoesmatematicas2;
+
+/**Eu Heloisa desenvolvi 10 operações matemáticas
+ *
+ * @author Heloisa Silva 1DS/AMS
+ */
+public class Opracoesmatematicas2 {
+
+     public static void main(String[] args) {
+        // 1. Área do quadrado (lado = 6)
+        int ladoQuadrado = 6;
+        System.out.println("Área do quadrado: " + areaQuadrado(ladoQuadrado));
+
+        // 2. Área do retângulo (base = 6, altura = 5)
+        int baseRet = 19, alturaRet = 45;
+        System.out.println("Área do retângulo: " + areaRetangulo(baseRet, alturaRet));
+
+        // 3. Área do losango (diagonais 16 e 9)
+        double diagMaior = 16, diagMenor = 9;
+        System.out.println("Área do losango: " + areaLosango(diagMaior, diagMenor));
+
+        // 4. Área do triângulo (base = 23, altura = 65 - assumida)
+        int baseTri = 23, alturaTri = 65;
+        System.out.println("Área do triângulo: " + areaTriangulo(baseTri, alturaTri));
+
+        // 5. Área da circunferência (pi = 3.14, raio = 10)
+        double raio = 10;
+        System.out.println("Área da circunferência: " + areaCircunferencia(raio));
+
+        // 6. Média dos números (4, 3, 2, 5, 6)
+        int[] numeros = {4, 3, 2, 5, 6};
+        System.out.println("Média dos números: " + media(numeros));
+
+        // 7. Soma de 34 + 456
+        System.out.println("Soma: " + soma(34, 456));
+
+        // 8. Subtração de 65 - 50
+        System.out.println("Subtração: " + subtracao(65, 50));
+
+        // 9. Divisão de 678 por 2
+        System.out.println("Divisão: " + divisao(678, 2));
+
+        // 10. Multiplicação de 455 * 80
+        System.out.println("Multiplicação: " + multiplicacao(455, 80));
+    }
+
+    public static int areaQuadrado(int lado) {
+        return lado * lado;
+    }
+
+    public static int areaRetangulo(int base, int altura) {
+        return base * altura;
+    }
+
+    public static double areaLosango(double dMaior, double dMenor) {
+        return (dMaior * dMenor) / 2;
+    }
+
+    public static int areaTriangulo(int base, int altura) {
+        return (base * altura) / 2;
+    }
+
+    public static double areaCircunferencia(double raio) {
+        double pi = 3.14;
+        return pi * raio * raio;
+    }
+
+    public static double media(int[] numeros) {
+        int soma = 0;
+        for (int num : numeros) {
+            soma += num;
+        }
+        return (double) soma / numeros.length;
+    }
+
+    public static int soma(int a, int b) {
+        return a + b;
+    }
+
+    public static int subtracao(int a, int b) {
+        return a - b;
+    }
+
+    public static double divisao(double a, double b) {
+        return a / b;
+    }
+
+    public static int multiplicacao(int a, int b) {
+        return a * b;
+    }
+}
