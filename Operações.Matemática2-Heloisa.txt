@@ -15,7 +15,7 @@ public class OperacoesMatematicas2 {
         int ladoQuadrado = 6;
         System.out.println("Área do quadrado: " + areaQuadrado(ladoQuadrado));
 
-        // 2. Área do retângulo (base = 6, altura = 5)
+        // 2. Área do retângulo (base = 19, altura = 5)
         int baseRet = 19, alturaRet = 45;
         System.out.println("Área do retângulo: " + areaRetangulo(baseRet, alturaRet));
 
